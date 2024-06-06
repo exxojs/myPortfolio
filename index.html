@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myPortfolioTest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pageOne">
+    <h1 align="center" id="myNameIsWhat">I'm John Joseph</h1>
+    <div class="logoBox">
+      <img src="diazLogoTransparent.svg" alt="logo">
+    </div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+
+    <div class="primaryLinks">
+      <button id="resume">
+        Resume <i class="fa-regular fa-floppy-disk"></i>
+      </button>
+
+      <button id="contactMe" onclick="openContactMe()">
+        Contact Me <i class="fa-solid fa-phone"></i>
+      </button>
+    </div>
+  </div> <!--PAGE ONE-->
+
+  <!--------------------------------------------------------------------------------------------------------------
+  ====================================================================================================-->
+  <Div class="pageTwo">
+
+    
+    <div class="head">
+      <div class="primaryMenu">
+        <button id="cal1" onclick="goPageOne()">Skills</button>
+        <button id="cal2" onclick="goPageTwo(), goBackProjPage()">Projects</button>
+        <button id="cal3" onclick="goPageThree()">Message</button>
+      </div>
+    </div>
+    <div class="contenigger">
+    <div class="profileM">
+      <img src="PFP.gif" alt="" width="100px">
+      <h2>Joseph Diaz</h2>
+      <p id="work">Full-Stack Developer</p>
+      <nav class="navbar">
+        <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/JSEPH.Dz/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://www.instagram.com/rai.hiroaki/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/reel/C0O7n-1NSUP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+      </nav>
+      
+
+      <div class="Biography">
+        <div id="Phone">
+            <p>Phone</p>
+            <h3>+63 09933459551</h3>
+            <h3>+63 09566450116</h3>
+        </div>
+
+        <div id="Emails">
+            <p>Emails</p>
+            <h3>sanny.eeexxo@gmail.com</h3>
+            <h3>n2022084@dlszobel.edu.ph</h3>
+        </div>
+
+        <div id="Location">
+            <p>Location</p>
+            <h3>Muntinlupa, Manila, Philippines</h3>
+        </div>
+
+        <div id="Birthdate">
+            <p>Birthdate</p>
+            <h3>November 24, 2009</h3>
+        </div>
+        
+    </div>
+    <img src="diazLogoTransparent.svg" alt="" style="border: none; margin-top: -50px; margin-bottom: -50px;">
+    </div>
+
+    <div class="contentBox">
+      <div class="subOne">
+
+        <div class="topGun">
+          <h1 id="title">Skills —</h1>
+          
+        </div>
+
+        <div class="skillsBox">
+          <div class="frontEnd" >
+            <h1>Front-End</h1>
+            <ul>
+              <li><h3>JavaScript</h3></li>
+                <span class="bar"><span class="javaScript"></span></span>
+              <li><h3>React</h3></li>
+                <span class="bar"><span class="react"></span></span>
+              <li><h3>HTML</h3></li>
+                <span class="bar"><span class="HTML"></span></span>
+              <li><h3>CSS</h3></li>
+                <span class="bar"><span class="CSS"></span></span>
+            </ul>
+          </div>
+  
+          <div class="backEnd" >
+            <h1>Back-End / Servers</h1>
+            <ul>
+              <li><h3>Python</h3></li>
+               <span class="bar"><span class="python"></span></span>
+              <li><h3>Node JS</h3></li>
+               <span class="bar"><span class="nodeJs"></span></span>
+              <li><h3>MS Excel Integration</h3></li>
+               <span class="bar"><span class="excel"></span></span>
+              <li><h3>SQL</h3></li>
+               <span class="bar"><span class="sql"></span></span>
+            </ul>
+          </div>
+        </div>
+      </div> <!--subONE End-->
+
+        <div class="subTwo" style=" display: none; flex-flow: column; justify-content: center; align-items: center;">
+
+          <div class="educ" style="display: flex; flex-flow: row wrap; padding: 16px; padding-top: 0; background-color: rgb(244, 248, 252); padding-bottom: 0; margin-bottom: none;
+            border: solid 2px; border-radius: 10px; width: 90%; justify-content: space-evenly;">
+            <div class="titleEduc" style="margin-right: 16px; justify-content: center; align-items: center; display: flex; ">
+              <h1 style="font-family: arial;">Education🎓🎓</h1>
+            </div>
+            <div class="educDetails" style="padding: 0;">
+              <h3 style="font-family: arial;">ICT</h2>
+              <p style="margin-top: -16px; font-family: Arial, system-ui;">De La Salle Santiago Zobel ‣ 2028</p>
+              <h3 style="font-family: arial; margin-top: -12px;">BS Computer Science</h2>
+              <p style="margin-top: -16px; font-family: Arial, system-ui;">P.L. Muntinlupa</p>
+            </div>
+          </div> <!--END OF EDUCATION-->
+
+          <h1 style="font-family: Be Vietnam Pro;">— Projects —</h1>
+
+          <div class="proj">
+            <div class="albumButtons">
+              <div class="major" onclick="goMajor()">
+              
+              <img src="major.svg" alt="major projects" width="260px" style="margin-bottom: -60px;">
+              <h2 align="center">Major Projects👑</h2>
+            </div> <!--END OF MAJOR-->
+            <div class="minor" onclick="goMinor()"> 
+              <img src="minor.svg" alt="minor projects" width="240px" style="margin-bottom: -30px;">
+              <h2 align="center">Minor Projects🕹️</h2>
+            </div> <!--END OF MINOR-->
+            </div>
+            
+
+            <div class="minorAlbum">
+              <div class="minorNav">
+                <button id="niggaGoBack" onclick="goBackProjPage()"><h2>Go Back</h2></button>
+                <button><h2>Message Me!</h2></button>
+              </div>
+              
+
+              <div class="bday">
+                <img src="exxojs-bday.png" width="100%" alt="">
+                  <h2>HAPI BDAY!!! - Greet your loved ones!</h2>
+                  <p>Wholesome</p>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores reiciendis corporis similique commodi inventore saepe quidem excepturi, quos nemo molestias, eos placeat vero. Ea possimus eligendi esse sequi in?</h4>
+                  <h2><a href="https://exxojs.github.io/HAPI-BDAY/index.html" target="_blank">exxojs - HAPI BDAY [OPEN]</a></h2>
+                  <div class="tags" style="display: flex; flex-flow: row; padding: 2px; background-color:rgb(216, 227, 236); width: 100%; max-width: fit-content; border-radius: 20px; border: solid black 1px;">
+                    <p style="margin-right: 8px; margin-left: 8px;">JavaScript</p>
+                  <p style="margin-right: 8px;">CSS</p>
+                  <p style="margin-right: 8px;">HTML</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="majorAlbum">
+                <div class="minorNav">
+                    <button id="niggaGoBack" onclick="goBackProjPage()"><h2>Go Back</h2></button>
+                    <button><h2>Message Me!</h2></button>
+                  </div>
+                <div class="calculator">
+                    <img src="exxojs-varCal.png" width="100%" alt="">
+                      <h2>varCal - Algebraic Line Calculator</h2>
+                      <p>Mathematics</p>
+                      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores reiciendis corporis similique commodi inventore saepe quidem excepturi, quos nemo molestias, eos placeat vero. Ea possimus eligendi esse sequi in?</h4>
+                      <h2><a href="https://exxojs.github.io/varCal-Algebraic-Calculator/main.html" target="_blank">exxojs - varCal [OPEN]</a></h2>
+                      <div class="tags" style="display: flex; flex-flow: row; padding: 2px; background-color:rgb(216, 227, 236); width: 100%; max-width: fit-content; border-radius: 20px; border: solid black 1px;">
+                        <p style="margin-right: 8px; margin-left: 8px;">JavaScript</p>
+                      <p style="margin-right: 8px;">CSS</p>
+                      <p style="margin-right: 8px;">HTML</p>
+                      </div>
+                  </div>
+            </div>
+          </div> <!--END OF PROJECTS-->
+          
+            <h2 style="font-family: be vietnam pro;">to be continued</h2>
+        </div> <!--END OF SUBTWO-->
+      <img src="diazLogoTransparent.svg" height="50px">
+
+    </div><!--CONTENT BOX END-->
+
+
+    </div>
+
+    
+  </Div> <!--END OF PAGE 2-->
+
+  <div class="pageThree">
+    <header>
+      <h1>Keep In Touch😊</h1>
+    <h3>Feel free to get in touch and <font color="#fc565d">talk more about your project plans.</font></h3>
+    <div class="contactPage">
+      <nav class="navbar">
+        <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/JSEPH.Dz/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://www.instagram.com/rai.hiroaki/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/reel/C0O7n-1NSUP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+      </nav>
+    </div>
+    <div class="minorNav">
+        <button id="exploreBitch" onclick="closeContactMe()"><h2>explore again</h2></button>
+        <button id="contactMe" onclick="openContactMe()"><h2>Message Me!</h2></button>
+      </div>
+  </header>
+  <main>
+      <section>
+          <h2>Mail Me!</h2>
+          <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br><br>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea><br><br>
+              <input type="submit" value="Send">
+          </form>
+      </section>
+      <section>
+        <div class="optimusNigga">
+          <img src="diazLogoTransparent.svg" height="400" alt="DIAZ" id="niggatron">
+        </div>
+          <ul>
+              <li>
+                  <h3>John Joseph M. Diaz</h3>
+                  <p>FullStack - Ready To Solve Your Problem :D</p>
+              </li>
+          </ul>
+      </section>
+  </main>
+  <footer>
+      <p>&copy; 2024 Diaz</p>
+  </footer>
+  </div>
+
+  <script src="https://kit.fontawesome.com/92839e2d3d.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+</body>
+</html>
