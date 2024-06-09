@@ -59,4 +59,5 @@ function goBackProjPage(){
   minorAlbum.style.display = "none";
   //majorAlbum.style.display = "none";
   albumBtn.style.display = "flex";
+  majorAlbum.style.display = "none";
 }
