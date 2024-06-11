@@ -21,15 +21,20 @@ function goPageTwo(){
 
 const goMinorAlbum = document.querySelector("minor")
 const goMajorAlbum = document.querySelector("major")
-const goBackProj = document.querySelector("niggaGoBack")
+const goBackProj = document.querySelector("GoBack")
 const exploreAgain = document.querySelector("exploreBitch")
 const contactMeBtn = document.querySelector("contactMe")
+const goPy = document.querySelector("goPy")
+
 
 const minorAlbum = document.querySelector(".minorAlbum")
 const majorAlbum = document.querySelector(".majorAlbum")
 const albumBtn = document.querySelector(".albumButtons")
 const contactPage = document.querySelector("main")
 const niggaTwo = document.querySelector(".pageTwo")
+const pythonAlbum = document.querySelector(".pythonAlbum")
+const webpage = document.querySelector(".webpage")
+
 
 function closeContactMe(){
     contactPage.style.display = "none";
@@ -60,4 +65,14 @@ function goBackProjPage(){
   //majorAlbum.style.display = "none";
   albumBtn.style.display = "flex";
   majorAlbum.style.display = "none";
+}
+
+function goPython(){
+pythonAlbum.style.display = "flex";
+webpage.style.display = "none";
+}
+
+function closePython(){
+  pythonAlbum.style.display = "none";
+  webpage.style.display = "flex";
 }
