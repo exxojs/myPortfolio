@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>myPortfolioTest</title>
+  <title>myPortfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
   <link rel="icon" href="coffee.png" type="image/png">
   <link rel="stylesheet" href="style.css">
@@ -46,7 +46,7 @@
         <button id="cal3" onclick="goPageThree()">Message</button>
       </div>
     </div>
-    <div class="contenigger">
+    <div class="contentboxbox">
     <div class="profileM">
       <img src="PFP.gif" alt="" width="100px">
       <h2>Joseph Diaz</h2>
@@ -172,7 +172,7 @@
 
             <div class="minorAlbum">
               <div class="minorNav">
-                <button id="niggaGoBack" onclick="goBackProjPage()"><h2>Go Back</h2></button>
+                <button id="GoBack" onclick="goBackProjPage()"><h2>Go Back</h2></button>
                 <button><h2>Message Me!</h2></button>
               </div>
               
@@ -193,34 +193,75 @@
 
             <div class="majorAlbum">
                 <div class="minorNav">
-                    <button id="niggaGoBack" onclick="goBackProjPage()"><h2>Go Back</h2></button>
+                    <button id="GoBack" onclick="goBackProjPage()"><h2>Go Back</h2></button>
                     <button><h2>Message Me!</h2></button>
-                  </div>
-                <div class="calculator">
-                    <img src="exxojs-varCal.png" width="100%" alt="">
-                      <h2>varCal - Algebraic Line Calculator</h2>
-                      <p>Mathematics</p>
-                      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores reiciendis corporis similique commodi inventore saepe quidem excepturi, quos nemo molestias, eos placeat vero. Ea possimus eligendi esse sequi in?</h4>
-                      <h2><a href="https://exxojs.github.io/varCal-Algebraic-Calculator/main.html" target="_blank">exxojs - varCal [OPEN]</a></h2>
-                      <div class="tags" style="display: flex; flex-flow: row; padding: 2px; background-color:rgb(216, 227, 236); width: 100%; max-width: fit-content; border-radius: 20px; border: solid black 1px;">
-                        <p style="margin-right: 8px; margin-left: 8px;">JavaScript</p>
-                      <p style="margin-right: 8px;">CSS</p>
-                      <p style="margin-right: 8px;">HTML</p>
+                    <button id="goPy" onclick="goPython()"><h2>Python Projects</h2></button>
+                    <button id="closePy" onclick="closePython()"><h2>Close Python</h2></button>
+
+                </div>
+
+                  <div class="pythonAlbum">
+                      <div class="pythonTemplate">
+                        <img src="python.png" alt="python" width="200">
+                        <div class="codeBox">
+                            <div class="infoPy">
+                            <button id="closePy"></button>
+                            <button id="minimizePy"></button>
+                            <button id="zoom"></button>
+                            </div>
+                            <hr width="99%" height="1px">
+                          <p id="summary">>Slope Calculator <br>
+                            >Enter `new` or quit <br>
+                            >Enter X1 value <br>
+                            >Enter Y1 value <br>
+                            >Enter X2 value <br>
+                            >Enter Y2 value <br>
+                            >Displays line equation in Slope intercept form.</p>
+
+                            <div class="collapsible">
+                              <input type="checkbox" id="collapsible-head">
+                              <label for="collapsible-head">▶ View Code</label>
+                              <div class="collapsible-text">
+                              <h2>Open in GitHub</h2>
+                               <a href="https://github.com/exxojs/Linear-Calcu-Py">
+                                <p>
+                                  Linear-Calculator.py
+                                </p>
+                              </a> 
+                              </div>
+                            </div>
+                        </div>
                       </div>
                   </div>
 
-                  <div class="calculator">
-                    <img src="exxojs-league.png" width="100%" alt="">
-                      <h2>varCal - To-Do List</h2>
-                      <p>Management</p>
-                      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores reiciendis corporis similique commodi inventore saepe quidem excepturi, quos nemo molestias, eos placeat vero. Ea possimus eligendi esse sequi in?</h4>
-                      <h2><a href="https://exxojs.github.io/to-do/" target="_blank">exxojs - To-Do [OPEN]</a></h2>
-                      <div class="tags" style="display: flex; flex-flow: row; padding: 2px; background-color:rgb(216, 227, 236); width: 100%; max-width: fit-content; border-radius: 20px; border: solid black 1px;">
-                        <p style="margin-right: 8px; margin-left: 8px;">JavaScript</p>
-                      <p style="margin-right: 8px;">CSS</p>
-                      <p style="margin-right: 8px;">HTML</p>
-                      </div>
+                  <div class="webpage">
+                    <div class="calculator">
+                      <img src="exxojs-varCal.png" width="100%" alt="">
+                        <h2>varCal - Algebraic Line Calculator</h2>
+                        <p>Mathematics</p>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores reiciendis corporis similique commodi inventore saepe quidem excepturi, quos nemo molestias, eos placeat vero. Ea possimus eligendi esse sequi in?</h4>
+                        <h2><a href="https://exxojs.github.io/varCal-Algebraic-Calculator/main.html" target="_blank">exxojs - varCal [OPEN]</a></h2>
+                        <div class="tags" style="display: flex; flex-flow: row; padding: 2px; background-color:rgb(216, 227, 236); width: 100%; max-width: fit-content; border-radius: 20px; border: solid black 1px;">
+                          <p style="margin-right: 8px; margin-left: 8px;">JavaScript</p>
+                        <p style="margin-right: 8px;">CSS</p>
+                        <p style="margin-right: 8px;">HTML</p>
+                        </div>
+                    </div>
+  
+                    <div class="league">
+                      <img src="exxojs-league.png" width="100%" alt="">
+                        <h2>varCal - To-Do List</h2>
+                        <p>Management</p>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores reiciendis corporis similique commodi inventore saepe quidem excepturi, quos nemo molestias, eos placeat vero. Ea possimus eligendi esse sequi in?</h4>
+                        <h2><a href="https://exxojs.github.io/to-do/" target="_blank">exxojs - To-Do [OPEN]</a></h2>
+                        <div class="tags" style="display: flex; flex-flow: row; padding: 2px; background-color:rgb(216, 227, 236); width: 100%; max-width: fit-content; border-radius: 20px; border: solid black 1px;">
+                          <p style="margin-right: 8px; margin-left: 8px;">JavaScript</p>
+                        <p style="margin-right: 8px;">CSS</p>
+                        <p style="margin-right: 8px;">HTML</p>
+                        </div>
+                    </div>
                   </div>
+                
             </div>
           </div> <!--END OF PROJECTS-->
           
@@ -283,8 +324,8 @@
           </form>
       </section>
       <section>
-        <div class="optimusNigga">
-          <img src="diazLogoTransparent.svg" height="400" alt="DIAZ" id="niggatron">
+        <div class="optimus">
+          <img src="diazLogoTransparent.svg" height="400" alt="DIAZ" id="megatron">
         </div>
           <ul>
               <li>
