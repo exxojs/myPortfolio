@@ -951,6 +951,15 @@ animation: sql 3s;
   padding: 16px;
   margin-bottom: 16px;
 }
+
+.budget {
+  border: solid; 
+  background-color: aliceblue; 
+  font-family: Be Vietnam Pro; 
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
 .bday {
   border: solid; 
   background-color: rgba(255, 99, 71, 0.493); 
@@ -1210,10 +1219,6 @@ footer {
     border-radius: 50%;
     border: none;
   }
-
-.infoPy #closePy{
-  background-color: #ff5757;
-}
 
 .infoPy #minimizePy{
   background-color: #ffde59;
