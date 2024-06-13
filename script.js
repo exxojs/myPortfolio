@@ -67,12 +67,10 @@ function goBackProjPage(){
   majorAlbum.style.display = "none";
 }
 
-function goPython(){
-pythonAlbum.style.display = "flex";
-webpage.style.display = "none";
-}
+let pythonAlbumVisible = false;
 
-function closePython(){
-  pythonAlbum.style.display = "none";
-  webpage.style.display = "flex";
+function togglePythonAlbum() {
+  pythonAlbumVisible = !pythonAlbumVisible;
+  pythonAlbum.style.display = pythonAlbumVisible ? "flex" : "none";
+  webpage.style.display = pythonAlbumVisible ? "none" : "flex";
 }
