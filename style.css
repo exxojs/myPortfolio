@@ -952,6 +952,14 @@ animation: sql 3s;
   margin-bottom: 16px;
 }
 
+.witty {
+  border: solid; 
+  background-color: aliceblue; 
+  font-family: Be Vietnam Pro; 
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
 .budget {
   border: solid; 
   background-color: aliceblue; 
@@ -1118,6 +1126,8 @@ footer {
     border-radius: 20px;
     margin-bottom: 16px;
   }
+
+  
   #summary {
     color: white;
   }
@@ -1220,8 +1230,22 @@ footer {
     border: none;
   }
 
+  .infoPy {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .infoPy  button:hover{
+    box-shadow: none;
+    transform: translateY(-5px);
+  }
 .infoPy #minimizePy{
   background-color: #ffde59;
+}
+
+.infoPy #closePy{
+  background-color: #ff5959;
 }
 
 .infoPy #zoom{
