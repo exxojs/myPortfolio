@@ -634,10 +634,19 @@ animation: sql 3s;
   .contentBox{
     order: 1;
     width: 100%;
-    max-width: 290px;
-    
+    max-width: 330px;
+    padding: 12px;
   }
   
+  .pythonAlbum {
+    max-width: 260px;
+  }
+
+
+  .arduinoProj {
+    display: block;
+  }
+
   .skillsBox{
     flex-flow: column;
   }
@@ -845,6 +854,8 @@ animation: sql 3s;
   .major h2, .minor h2 {
     font-size: 18px;
   }
+
+  
 }
 
 /*+=====================================================*/
@@ -864,6 +875,22 @@ animation: sql 3s;
     border: solid #ff3838 2px;
     font-family: 'Be Vietnam Pro';
 }  
+
+
+.minorNav #arrdee {
+  background-color: #171e21;
+  border: solid #04949c 3px;
+  color: white;
+  font-size: 12px;
+  padding: 16px 16px;
+  font-family: arial;
+}
+
+.minorNav #arrdee:hover{
+  box-shadow: #02565a 0px 7px 0px 0px;
+  background-color: #03c8d3;
+  color: black;
+}
 
 .minorNav #goPy{
   background-color: #FDD646;
@@ -1251,3 +1278,56 @@ footer {
 .infoPy #zoom{
   background-color: #7ed957;
 }
+
+/*======================================================================================*/
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.arduinoProj {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #1f272a;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 14px;
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  color: #fff; /* changed 'white' to '#fff' for consistency */
+  margin: 12px;
+  border: solid #000000 3px;
+  display: none;
+}
+
+.headache {
+  display: flex;
+  justify-content: center; /* changed 'tart' to 'flex-start' */
+  align-items: center;
+  background-color: #171e21;
+  margin: 8px 0; /* combined margin-left and margin-right */
+  padding: 8px;
+  padding-right: 10%;
+  margin-bottom: 16px;
+}
+
+.headache img{
+  margin: 8px;
+}
+.headache:first-child {
+  justify-content: left;
+}
+
+#content {
+  background-color: #1f272a;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  font-size: 10px;
+}
+
+
