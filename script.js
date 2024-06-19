@@ -70,21 +70,23 @@ function goBackProjPage(){
 }
 
 let pythonAlbumVisible = false;
+let arduinoVisible = false;
+let webpageVisible = true; // assuming webpage is visible by default
 
 function togglePythonAlbum() {
-  pythonAlbumVisible = !pythonAlbumVisible;
-  pythonAlbum.style.display = pythonAlbumVisible ? "flex" : "none";
-  webpage.style.display = pythonAlbumVisible ? "none" : "flex";
-  arduino.style.display = pythonAlbum ? "none" : "block"
+  pythonAlbumVisible =!pythonAlbumVisible;
+  pythonAlbum.style.display = pythonAlbumVisible? "flex" : "none";
+  webpage.style.display = pythonAlbumVisible? "none" : "flex";
+  arduino.style.display = "none"; // close arduino when pythonAlbum is toggled
+  arduinoVisible = false; // reset arduinoVisible flag
 }
 
-let arduinoVisible = false
-
-function  toggleArduino(){
-arduinoVisible = !arduinoVisible
-arduino.style.display = arduinoVisible ? "block" : "none";
-webpage.style.display = arduinoVisible ? "none" : "flex";
-pythonAlbum.style.display = arduinoVisible ? "none" : "flex";
+function toggleArduino(){
+  arduinoVisible =!arduinoVisible;
+  arduino.style.display = arduinoVisible? "block" : "none";
+  webpage.style.display = arduinoVisible? "none" : "flex";
+  pythonAlbum.style.display = "none"; // close pythonAlbum when arduino is toggled
+  pythonAlbumVisible = false; // reset pythonAlbumVisible flag
 }
 
 //==========================================================================================================
