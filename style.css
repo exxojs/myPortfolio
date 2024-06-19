@@ -638,9 +638,6 @@ animation: sql 3s;
     padding: 12px;
   }
   
-  .pythonAlbum {
-    max-width: 260px;
-  }
 
 
   .arduinoProj {
@@ -1140,146 +1137,10 @@ footer {
     display: flex;
     justify-content: center;
   }
-
-  /*=======================================*/
-
-  .pythonAlbum{
-    display: none; 
-    flex-flow: column; 
-    background-color: black; 
-    font-family: 'Be Vietnam Pro';
-    width: 100%;
-    max-width: 800px;
-    border-radius: 20px;
-    margin-bottom: 16px;
-  }
-
-  
-  #summary {
-    color: white;
-  }
-  .pythonTemplate {
-    overflow: hidden;
-    background-color: #000000;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    padding: 16px;
-    padding-top: -8px;
-    border-radius: 20px;
-    margin-bottom: 16px;
-  }
-  
-  .codeBox {
-    display: flex;
-    flex-flow: column;
-    padding: 16px;
-    margin-top: 4px;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #001524;
-    border-radius: 20px;
-    margin-bottom: 16px;
-  }
-  
-  .collapsible{ 
-    max-width: 450px;
-
-    font-weight: 500;
-    max-height: fit-content;
-  }
-  
-  .collapsible input{
-    display: none;
-  }
-  
-  .collapsible label {
-    position: relative;
-    font-weight: 600;
-    background-color: rgb(255, 255, 255);
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 15px 0px;
-    border-radius: 4px;
-    padding: 15px;
-    z-index: 1;
-  }
-  
-  .collapsible label::after{
-    content: "";
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 18px;
-    height: 18px;
-  
-  }
-  
-  .collapsible input:checked + label:after{
-    transform: all 0.3 ease;
-  }
-  
-  .collapsible-text{
-    max-height: 1px;
-    overflow: hidden;
-    border-radius: 10px;
-    line-height: 1.4;
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .collapsible input:checked ~ .collapsible-text{
-    max-height: 300px;
-    padding-bottom: 25px;
-    background-color: rgb(255, 255, 255);
-    opacity: 1;
-    top: 0;
-  }
-  
-  .collapsible-text h2{
-    margin-bottom: 10px;
-    padding: 8px ;
-    color: black;
-  }
-  
-  .collapsible-text p{
-    padding: 8px;
-  }
+ 
 
   /*==================================================*/
-  .infoPy button{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: none;
-  }
-
-  .infoPy {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-  }
-
-  .infoPy  button:hover{
-    box-shadow: none;
-    transform: translateY(-5px);
-  }
-.infoPy #minimizePy{
-  background-color: #ffde59;
-}
-
-.infoPy #closePy{
-  background-color: #ff5959;
-}
-
-.infoPy #zoom{
-  background-color: #7ed957;
-}
-
-/*======================================================================================*/
+ 
 
 /* Arduino Project Container */
 .arduinoProj {
@@ -1367,3 +1228,127 @@ footer {
   }
 }
 
+/*===============================================================*/
+/* Project Container */
+.projectContainer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #000;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  display: none;
+  border-radius: 30px;
+}
+
+.inner{
+  padding: 16px;
+  background-color: #001524;
+  border-radius: 20px;
+}
+
+/* Header Section */
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.headerSection img {
+  margin-right: 20px;
+}
+
+#pageSelect {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fed03f;
+  color: #000;
+}
+
+/* Code Container */
+#codeContainer {
+  padding: 20px;
+}
+
+#codeToggle{
+  background-color: #fed141; /* yellow background */
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Be Vietnam Pro';
+  border: solid #000000 3px;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+#codeToggle:hover{
+  box-shadow: black 0px 7px 0px 0px;
+  transform: translateY(-5px);
+  background-color: #FDD646;
+  color: black;
+}
+
+#copyCode{
+  background-color: #fed141; /* yellow background */
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Be Vietnam Pro';
+  border: solid #000000 3px;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+#copyCode:hover{
+  box-shadow: black 0px 7px 0px 0px;
+  transform: translateY(-5px);
+  background-color: #FDD646;
+  color: black;
+}
+
+#codeDisplay {
+  max-width: 100%;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 16px;
+  border-left: 1px solid #ccc;
+  background-color: #001524;
+  color: white;
+}
+
+#codeDisplay code {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+::-webkit-scrollbar{
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+@media (max-width: 430px) {
+  #codeDisplay {
+      height: 50vh;
+      font-size: 8px;
+  }
+
+  .projectContainer{
+    max-width: 300px;
+  }
+}
