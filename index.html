@@ -199,43 +199,26 @@
                     <button id="arrdee" onclick="toggleArduino()"> C++ Arduino</button>
                 </div>
 
-                  <div class="pythonAlbum">
-                      <div class="pythonTemplate">
-                        <img src="python.png" alt="python" width="200">
-                        <div class="codeBox">
-                            <div class="infoPy">
-                            <div class="buttons">
-                            <button id="closePy"></button>
-                            <button id="minimizePy"></button>
-                            <button id="zoom"></button>
-                            </div>
-                            <div class="titlePy">
-                              Slope Calculator
-                            </div>
-                            </div>
-                            <hr width="99%" height="1px">
-                          <p id="summary">>Slope Calculator <br>
-                            >Enter `new` or quit <br>
-                            >Enter X1 value <br>
-                            >Enter Y1 value <br>
-                            >Enter X2 value <br>
-                            >Enter Y2 value <br>
-                            >Displays line equation in Slope intercept form.</p>
-
-                            <div class="collapsible">
-                              <input type="checkbox" id="collapsible-head">
-                              <label for="collapsible-head">▶ View Code</label>
-                              <div class="collapsible-text">
-                              <h2>Open in GitHub</h2>
-                               <a href="https://github.com/exxojs/Linear-Calcu-Py">
-                                <p>
-                                  Linear-Calculator.py
-                                </p>
-                              </a> 
-                              </div>
-                            </div>
-                        </div>
+                  
+                  <div class="projectContainer">
+                    <header class="headerSection">
+                        <img src="python.png" alt="Arduino Logo" width="200px">
+                        
+                      </header>
+                      <div class="inner">
+                      
+                      <div id="codeContainer">
+                        <select id="pageSelect">
+                          <option value="page1">Line Calculator</option>
+                          <option value="page2">Page 2</option>
+                          <option value="page3">Page 3</option>
+                        </select> 
+                        <button id="codeToggle">Show Code</button>
+                        
+                        <pre id="codeDisplay"></pre>
+                        <button id="copyCode">Copy Code</button>
                       </div>
+                    </div>
                   </div>
 
                   <div class="arduinoProj">
