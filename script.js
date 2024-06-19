@@ -90,16 +90,12 @@ function toggleArduino(){
 }
 
 //==========================================================================================================
-document.addEventListener('DOMContentLoaded', () => {
-  const dropdown = document.getElementById('page-dropdown');
-  const content = document.getElementById('content');
+const codeDisplay = document.getElementById('code-display');
+const toggleButton = document.getElementById('toggle-button');
+const pageDropdown = document.getElementById('page-dropdown');
+const copyButton = document.getElementById('copy-button');
 
-  const page1Content = `
-     <div class="pageOne">
-     <h1>
-      basicLCDArduino.ino
-     </h1>
-  <pre><code>
+const longCodePage1 = `
 //C++ code
 //C++ integers start with 0
 
@@ -150,43 +146,59 @@ seconds += 1;
 //since this is a looping/continious function; we add an increment by 1 (+=1)
 //this adds a value of 1 to whatever value variable 'seconds' have currently
 }
-      </code>
-  </pre>
-  </div>
-  `;
+`;
 
-  const page2Content = `
-      <h1>Welcome to Page 2!</h1>
-      <p>This is some sample content on page 2.</p>
-      <img src="image2.jpg" alt="Image on page 2">
-  `;
+const longCodePage2 = `
+// This is a long code example for Page 2
+function exampleFunction() {
+    //...long code here...
+}
+// More long code here...
+`;
 
-  const page3Content = `
-      <h1>Welcome to Page 3!</h1>
-      <p>This is some sample content on page 3.</p>
-      <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-      </ul>
-  `;
+const longCodePage3 = `
+// This is a long code example for Page 3
+function exampleFunction() {
+    //...long code here...
+}
+// More long code here...
+`;
 
-  dropdown.addEventListener('change', () => {
-      switch (dropdown.value) {
-          case 'page1':
-              content.innerHTML = page1Content;
-              break;
-          case 'page2':
-              content.innerHTML = page2Content;
-              break;
-          case 'page3':
-              content.innerHTML = page3Content;
-              break;
-          default:
-              content.innerHTML = '';
-      }
-  });
-
-  // Trigger the change event on page load
-  dropdown.dispatchEvent(new Event('change'));
+toggleButton.addEventListener('click', () => {
+  if (codeDisplay.style.display === 'none') {
+    codeDisplay.style.display = 'block';
+    toggleButton.textContent = 'Toggle Code';
+  } else {
+    codeDisplay.style.display = 'none';
+    toggleButton.textContent = 'Show Code';
+  }
 });
+
+pageDropdown.addEventListener('change', () => {
+  switch (pageDropdown.value) {
+    case 'page1':
+      codeDisplay.textContent = longCodePage1;
+      break;
+    case 'page2':
+      codeDisplay.textContent = longCodePage2;
+      break;
+    case 'page3':
+      codeDisplay.textContent = longCodePage3;
+      break;
+    default:
+      codeDisplay.textContent = '';
+  }
+});
+
+copyButton.addEventListener('click', () => {
+  const codeToCopy = codeDisplay.textContent;
+  const textarea = document.createElement('textarea');
+  textarea.value = codeToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  alert('Code copied to clipboard!');
+});
+
+codeDisplay.textContent = longCodePage1;
