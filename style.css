@@ -1214,7 +1214,7 @@ footer {
 }
 
 #copy-button:hover{
-  box-shadow: #02565a 0px 7px 0px 0px;
+ box-shadow: #02565a 0px 7px 0px 0px;
   background-color: #03c8d3;
   color: black;
 }
